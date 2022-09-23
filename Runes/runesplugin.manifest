@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2521150586
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 786f44a2a7dfa63cb08f449fab77ea57
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/RunesPlugin/Phase_Rush_rune.png
+- Assets/RunesPlugin/Conqueror_rune.png
+- Assets/RunesPlugin/Lethal_Tempo_rune.png
+- Assets/RunesPlugin/Electrocute_rune.png
+Dependencies: []

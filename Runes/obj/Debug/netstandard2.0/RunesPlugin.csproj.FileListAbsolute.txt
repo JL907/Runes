@@ -1,0 +1,11 @@
+C:\Users\Johnrey\Desktop\Runes\Runes\bin\Debug\netstandard2.0\RunesPlugin.dll.config
+C:\Users\Johnrey\Desktop\Runes\Runes\bin\Debug\netstandard2.0\RunesPlugin.deps.json
+C:\Users\Johnrey\Desktop\Runes\Runes\bin\Debug\netstandard2.0\RunesPlugin.dll
+C:\Users\Johnrey\Desktop\Runes\Runes\bin\Debug\netstandard2.0\RunesPlugin.pdb
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.csproj.AssemblyReference.cache
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.AssemblyInfoInputs.cache
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.AssemblyInfo.cs
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.csproj.CoreCompileInputs.cache
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.dll
+C:\Users\Johnrey\Desktop\Runes\Runes\obj\Debug\netstandard2.0\RunesPlugin.pdb
