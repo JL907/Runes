@@ -94,7 +94,8 @@ namespace RunesPlugin
             foreach (var item in SurvivorCatalog.allSurvivorDefs)
             {
                 if (item.bodyPrefab.GetComponent<RuneHandler>()) return;
-                item.bodyPrefab.AddComponent<RuneHandler>().keyStone = Skills.CreateGenericSkillWithSkillFamily(item.bodyPrefab, "KeyStone"); ;
+                RuneHandler runeHandler = item.bodyPrefab.AddComponent<RuneHandler>();
+                runeHandler.keyStone = Skills.CreateGenericSkillWithSkillFamily(item.bodyPrefab, "KeyStone");
                 Modules.Skills.AddKeyStone(item.bodyPrefab, electrocuteSkillDef);
                 Modules.Skills.AddKeyStone(item.bodyPrefab, phaseSkillDef);
                 Modules.Skills.AddKeyStone(item.bodyPrefab, lethalSkillDef);

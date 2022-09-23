@@ -31,7 +31,6 @@ namespace RunesPlugin.Modules
         public static void AddSkillToFamily(SkillFamily skillFamily, SkillDef skillDef, UnlockableDef unlockableDef = null)
         {
             Array.Resize<SkillFamily.Variant>(ref skillFamily.variants, skillFamily.variants.Length + 1);
-            Array.Resize(ref skillFamily.variants, skillFamily.variants.Length + 1);
 
             skillFamily.variants[skillFamily.variants.Length - 1] = new SkillFamily.Variant
             {
