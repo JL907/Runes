@@ -60,42 +60,42 @@ namespace RunesPlugin
         private void SurvivorCatalog_Init(On.RoR2.SurvivorCatalog.orig_Init orig)
         {
             orig();
-            SkillDef conquerorSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
-            {
-                skillName = "CONQUEROR_NAME",
-                skillNameToken = "CONQUEROR_NAME",
-                skillDescriptionToken = "CONQUEROR_DESC",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Conqueror_rune"),
-            });
-
-            SkillDef lethalSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
-            {
-                skillName = "LETHAL_NAME",
-                skillNameToken = "LETHAL_NAME",
-                skillDescriptionToken = "LETHAL_DESC",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Lethal_Tempo_rune"),
-            });
-
-            SkillDef phaseSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
-            {
-                skillName = "PHASE_RUSH_NAME",
-                skillNameToken = "PHASE_RUSH_NAME",
-                skillDescriptionToken = "PHASE_RUSH_DESC",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Phase_Rush_rune"),
-            });
-
-            SkillDef electrocuteSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
-            {
-                skillName = "ELECTROCUTE_NAME",
-                skillNameToken = "ELECTROCUTE_NAME",
-                skillDescriptionToken = "ELECTROCUTE_DESC",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Electrocute_rune"),
-            });
             foreach (var item in SurvivorCatalog.allSurvivorDefs)
             {
                 if (item.bodyPrefab.GetComponent<RuneHandler>()) return;
                 RuneHandler runeHandler = item.bodyPrefab.AddComponent<RuneHandler>();
                 runeHandler.keyStone = Skills.CreateGenericSkillWithSkillFamily(item.bodyPrefab, "KeyStone");
+                SkillDef conquerorSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+                {
+                    skillName = "CONQUEROR_NAME",
+                    skillNameToken = "CONQUEROR_NAME",
+                    skillDescriptionToken = "CONQUEROR_DESC",
+                    skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Conqueror_rune"),
+                });
+
+                SkillDef lethalSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+                {
+                    skillName = "LETHAL_NAME",
+                    skillNameToken = "LETHAL_NAME",
+                    skillDescriptionToken = "LETHAL_DESC",
+                    skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Lethal_Tempo_rune"),
+                });
+
+                SkillDef phaseSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+                {
+                    skillName = "PHASE_RUSH_NAME",
+                    skillNameToken = "PHASE_RUSH_NAME",
+                    skillDescriptionToken = "PHASE_RUSH_DESC",
+                    skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Phase_Rush_rune"),
+                });
+
+                SkillDef electrocuteSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+                {
+                    skillName = "ELECTROCUTE_NAME",
+                    skillNameToken = "ELECTROCUTE_NAME",
+                    skillDescriptionToken = "ELECTROCUTE_DESC",
+                    skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Electrocute_rune"),
+                });
                 Modules.Skills.AddKeyStone(item.bodyPrefab, electrocuteSkillDef);
                 Modules.Skills.AddKeyStone(item.bodyPrefab, phaseSkillDef);
                 Modules.Skills.AddKeyStone(item.bodyPrefab, lethalSkillDef);
